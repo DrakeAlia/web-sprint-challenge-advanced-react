@@ -36,6 +36,7 @@ test("form shows success message on submit with form details", () => {
     fireEvent.change(zipInput,{target: { value: "batcave" }
 });
 
+// checkout btn
 const checkoutButton = getByLabelText(/checkout/i);
 
 fireEvent.click(checkoutButton);

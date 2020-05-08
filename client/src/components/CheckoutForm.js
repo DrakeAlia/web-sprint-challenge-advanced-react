@@ -37,6 +37,7 @@ const CheckoutForm = props => {
         <label>
           First Name:
           <input
+          // add id for firstname
             id="firstName"
             name="firstName"
             value={values.firstName}
@@ -46,6 +47,7 @@ const CheckoutForm = props => {
         <label>
           Last Name:
           <input
+          // add id for lastname
             id="lastName"
             name="lastName"
             value={values.lastName}
@@ -55,6 +57,7 @@ const CheckoutForm = props => {
         <label>
           Address:
           <input
+          // address 
             id="address"
             name="address"
             value={values.address}
