@@ -6,15 +6,15 @@ import CheckoutForm from "./CheckoutForm";
 
 test("form header renders", () => {
     const { getByText } = render(<CheckoutForm />);
-});
-
-test("form shows success message on submit with form details", () => {
-    const { getByLabelText, getByText, getByTestId } = render(<CheckoutForm />);
 
     const header = getByText(/checkout form/i);
 
     expect(header).toBeInTheDocument();
-  });
+  
+});
+
+test("form shows success message on submit with form details", () => {
+    const { getByLabelText, getByText, getByTestId, findAllByText } = render(<CheckoutForm />);
 
         const firstNameInput = getByLabelText(/first Name/i);
         const lastNameInput = getByLabelText(/last Name/i);
